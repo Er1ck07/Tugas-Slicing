@@ -1,25 +1,72 @@
-<!doctype html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Colnago Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="sidebar" id="sidebar">
-      <button class="toggle-btn" id="toggleBtn">☰</button>
-      <ul class="nav-links">
-        <li><a href="#"><span class="text">Home</span></a></li>
-        <li><a href="#"><span class="text">Orders</span></a></li>
-        <li><a href="#"><span class="text">History</span></a></li>
-        <li><a href="#"><span class="text">Settings</span></a></li>
-      </ul>
-    </div>
+    <header class="navbar">
+      <div class="logo">
+        <span class="logo-icon">♣</span>
+        <span class="logo-text">COLNAGO</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#models">MODELS</a>
+        <a href="#framesets">FRAMESETS</a>
+        <a href="#accessories">ACCESSORIES</a>
+        <a href="#heritage">HERITAGE</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Search">🔍</button>
+        <button class="cart-btn" id="cartBtn">CART</button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>LA BICICLETTA.<br>PURE PERFORMANCE.</h1>
+          <p>ITALIAN CRAFTSMANSHIP & RACE-PROVEN LEGACY.</p>
+          <div class="hero-buttons">
+            <a href="#models" class="btn-primary">EXPLORE MODELS</a>
+            <a href="#configurator" class="btn-secondary">CUSTOM BUILD</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="models" class="catalog">
+        <h2>FLAGSHIP MODELS</h2>
+        
+        <div class="filter-group">
+          <button class="filter-btn active" data-category="all">ALL MODELS</button>
+          <button class="filter-btn" data-category="race">V-SERIES</button>
+          <button class="filter-btn" data-category="classic">C-SERIES</button>
+          <button class="filter-btn" data-category="gravel">G-SERIES</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+          <div class="card" data-category="race">
+            <div class="card-img-container">
+              <img src="https://cdn-jupiter.metropolis.co.uk/wp-content/uploads/sites/9/2024/12/Y1Rs-Mondiale-fondo-nero-prospettiva-anteriore.webp" alt="Colnago Y1Rs" class="product-img" />
+            </div>
+            <h3>Colnago Y1Rs</h3>
+            <p class="specs">Shimano Dura-Ace Di2 | Enve SES</p>
+            <p class="price">$15,200</p>
+            <button class="add-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>

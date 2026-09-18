@@ -1,6 +1,14 @@
-const sidebar = document.getElementById('sidebar');
-const toggleBtn = document.getElementById('toggleBtn');
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
 
-toggleBtn.addEventListener('click', () => {
-  sidebar.classList.toggle('collapsed');
+// Toggle mobile navbar view
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Auto-close menu when clicking a link on mobile
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
 });
