@@ -41,6 +41,11 @@ body {
   color: #fff;
 }
 
+.search-icon{
+  transform:translateY(3.5px);
+  width: 25px;
+}
+
 .nav-links {
   display: flex;
   gap: 32px;
