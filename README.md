@@ -16,10 +16,6 @@ The **Colnago Store** website serves as a modern digital storefront showcasing f
 
 ---
 
-## 📱 Responsiveness & Screenshots
-
-*(Replace the placeholder URLs below with your actual screenshot images)*
-
 ### Desktop View
 Designed for large screens with full horizontal navigation links and multi-column grid layouts.
 
