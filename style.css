@@ -118,7 +118,7 @@ body {
   text-align: center;
   padding: 60px 20px;
   background: linear-gradient(rgba(13, 13, 13, 0.55), rgba(13, 13, 13, 0.75)), 
-              url('https://italien.news/wp-content/uploads/2026/03/Tadej-Pogacar.jpg') center/cover no-repeat;
+              url('./assets/Tadej-Pogacar.jpg') center/cover no-repeat;
 }
 
 .hero-content h1 {
